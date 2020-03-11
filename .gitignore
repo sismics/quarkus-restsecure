@@ -1,0 +1,9 @@
+*.ids
+*.iml
+*.pyc
+*.ipr
+*.iws
+.idea
+.ideaDataSources
+.gradle/
+target/
