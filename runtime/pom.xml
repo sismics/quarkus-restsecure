@@ -10,6 +10,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
+    <groupId>com.sismics.quarkus</groupId>
     <artifactId>quarkus-restsecure</artifactId>
     <name>REST Secure - Runtime</name>
 
