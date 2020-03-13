@@ -22,4 +22,28 @@ public interface SecurityService {
      * @return The condition to check
      */
     boolean check(String permission);
+
+    /**
+     * This method is called before after authentication.
+     *
+     * @param userId The user ID
+     */
+    default void afterAuthenticate(UUID userId) {
+    }
+
+    /**
+     * This method is called before a user tries to sign off.
+     * You need to override this method if you wish to perform specific actions (eg. Record the name of the user who signed
+     * off).
+     */
+    default void onDisconnect() {
+    }
+
+    /**
+     * This method is called after a successful sign off.
+     * You need to override this method if you wish to perform specific actions (eg. Record the time the user signed off).
+     */
+    default void onDisconnected() {
+    }
+
 }
